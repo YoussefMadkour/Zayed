@@ -1,76 +1,26 @@
 import 'package:flutter/material.dart';
+import 'homepage.dart';
 
-void main() => runApp(Home());
+void main() {
+  runApp(MyApp());
+}
 
-class Home extends StatelessWidget {
-  const Home({super.key});
-
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.green,
-          title: Text('Zayed Republic'),
-        ),
-        body: Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children: [
-              SizedBox(
-                height: 150.0,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: [
-                    Container(
-                      height: 100.0,
-                      width: 300.0,
-                      margin: EdgeInsets.only(right: 10.0),
-                      decoration: BoxDecoration(
-                        color: Colors.purple,
-                        borderRadius: BorderRadius.circular(20),
-                        image: DecorationImage(
-                          image: AssetImage('assets/1.jpg'),
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                    // child: Image.asset('assets/3.jpg'),
-                    ),
-                  ],
-                ),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text('Top Picks for you'),
-                  Text('View all'),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Icon(
-                    Icons.delivery_dining,
-                    size: 80.0,
-                  ),
-                  Icon(
-                    Icons.local_pharmacy_rounded,
-                    size: 70.0,
-                  ),
-                  Icon(
-                    Icons.emoji_food_beverage_rounded,
-                    size: 70.0,
-                  ),
-                  Icon(
-                    Icons.family_restroom_rounded,
-                    size: 70.0,
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
+      debugShowCheckedModeBanner: false,
+
+      // Title of App
+      title: 'GFG slider',
+      theme: ThemeData(
+        primarySwatch: Colors.green,
       ),
+      darkTheme: ThemeData.dark(),
+
+      //First Screen of Slider App
+      home: HomePage(),
     );
   }
 }
