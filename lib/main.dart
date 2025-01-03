@@ -22,19 +22,19 @@ class Home extends StatelessWidget {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    Row(
-                      children: [
-                        Container(margin: EdgeInsets.only(right: 10.0),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(200),
-                          ),
-                          child: Image.asset('assets/1.jpg'),
+                    Container(
+                      height: 100.0,
+                      width: 300.0,
+                      margin: EdgeInsets.only(right: 10.0),
+                      decoration: BoxDecoration(
+                        color: Colors.purple,
+                        borderRadius: BorderRadius.circular(20),
+                        image: DecorationImage(
+                          image: AssetImage('assets/1.jpg'),
+                          fit: BoxFit.fill,
                         ),
-                        Image.asset('assets/2.jpg'),
-                        Image.asset('assets/3.jpg'),
-                        Image.asset('assets/4.jpg'),
-                        Image.asset('assets/4.jpg'),
-                      ],
+                      ),
+                    // child: Image.asset('assets/3.jpg'),
                     ),
                   ],
                 ),
