@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1088349328465",
+    "project_id": "zayed-republic",
+    "storage_bucket": "zayed-republic.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088349328465:android:52170536d54c0fdbfa9470",
+        "android_client_info": {
+          "package_name": "com.technodyna.zayed"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwWhGotuccmbyAo8o3xsjy1SZ9psxBzoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
